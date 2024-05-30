@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(img/bg1.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+}
+
+.navbar {
+    background-color: #06070B;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.navbar nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 10vh;
+}
+
+.nav-main ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-main ul li {
+    display: inline;
+}
+
+.nav-main ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.nav-main ul li a:hover {
+    background-color: #fff;
+    color: #06070B;
+}
+
+.hero{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.hero-text h1{
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Marko One', sans-serif !important;
+}
+
+.hero-text p{
+    color: #fff;
+    font-size: 17px;
+}
+
+.hero-btn{
+    margin-top: 30px;
+}
+
+.hero-btn button{
+    background-color: transparent;
+    color: #fff;
+    padding: 12px;
+    border: 2px solid purple;
+    border-radius: 50px;
+    width: 150px;
+}
+
+.hero-btn button:hover{
+    background-color: purple;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.about{
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 50px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text{
+    width: 50%;
+}
+
+.about-img{
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.about-img img{
+    height: 250px;
+    width: 350px;
+}
+
+.popular{
+    margin-top: 30px;
+    width: 100%;
+    height: 600px;
+}
+
+.popular-head > h2{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+.popular-games{
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.popular-games img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: none;
+    margin-left: 50px;
+}
+
+.contact{
+    margin-top: 30px;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-head h2{
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact .input-fields{
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact .input-fields .first-inputs > input,
+.contact .input-fields .last-inputs > input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    width: 400px;
+    margin: 5px;
+}
+
+.btn-submit{
+    margin-top: 20px;
+}
+
+.btn-submit button{
+    width: 100px;
+    padding: 10px;
+    border-radius: 60px;
+    border: 2px solid purple;
+    outline: none;
+    cursor: pointer;
+    background-color: purple;
+    color: #fff;
+}
+
+.btn-submit button:hover{
+    background-color: transparent;
+    border: 2px solid purple;
+    transition: 0.4s ease;
+}
+
+footer{
+    background-color: rgb(151, 151, 151);
+    height: 150px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+footer .copyright{
+    margin-right: 30px;
+}
+
+footer .copyright p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer .copyright p > span{
+    color: purple;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+}
+
+footer .social-icons h3{
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer .social-icons .icons{
+    margin: 15px;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+footer .social-icons .icons i{
+    font-size: 20px;
+    background-color: purple;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+}
+
+footer .social-icons .icons i:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
+/* Responsive design*/
+@media (max-width: 450px){
+
+ body{
+    margin: 0;
+    padding: 0;
+    }
+
+    html,body{
+        overflow-x: hidden;
+    }
+
+    .navbar nav ul{
+        display: none;
+    }
+
+    .hero-text{
+        margin-left: -2em;
+    }
+
+    .hero-text h1{
+        font-size: 25px;
+    }
+
+    .hero-text p{
+        font-size: 12px;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+    }
+
+    .about-text{
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .about-img img{
+        margin-right: 3em;
+    }
+
+    .popular{
+        height: 800px;
+        width: 100%;
+        margin-left: -2em;
+    }
+
+    .popular-head h2{
+        font-size: 25px;
+    }
+
+    .popular-games{
+        margin-left: 7em;
+    }
+
+    .popular-games img{
+        height: 110px;
+        width: 130px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.5em;
+    }
+
+    .contact .contact-head{
+        margin-left: -2em;
+    }
+
+    .contact .input-fields{
+        margin-left: -2em;
+    }
+
+    .contact .input-fields .first-inputs input,
+    .contact .input-fields .last-inputs input{
+        width: 300px;
+    }
+
+    footer .social-icons{
+        display: none;
+    }
+
+    footer .copyright{
+        text-align: center;
+        margin-left: 5em;
+    }
+
+    footer .copyright p{
+        font-size: 15px;
+        width: 70%;
+    }
+}
